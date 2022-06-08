@@ -31,8 +31,8 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
-  // const unique = this.journeys.map(journey => journey.transport);
-  // const unique = [...new Map(this.journeys.map(journey => [journey.transport, journey])).values()];
+  // Got the function from stack, but not sure how it works to retrieve the unoque values.
+  // https://stackoverflow.com/questions/15125920/how-to-get-distinct-values-from-an-array-of-objects-in-javascript
   const unique = [...new Set(this.journeys.map(journey => journey.transport))];
   return unique;
 };
